@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex예제2</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%
+        }
+
+        global {
+            background-color: #b5eddc;
+            height: 15%;
+        }
+
+        mid {
+            display: flex;
+            height: 85%
+        }
+
+        left {
+            width: 20%;
+            background-color: #eccfcf
+        }
+
+        content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article {
+            height: 80%;
+            background-color: antiquewhite
+        }
+        comment{
+            height: 20%;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <global>global menu
+        </global>
+        <mid>
+            <left>left menu
+            </left>
+            <content>
+                <article>article
+                </article>
+                <comment>comment
+                </comment>
+            </content>
+        </mid>
+    </div>
+</body></html>

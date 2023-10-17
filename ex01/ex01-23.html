@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>정규표현식</title>
+</head>
+
+<body>
+    <h1>정규표현식</h1>
+    <form action="ex02-02act.html">
+        <fieldset>
+            <legend>정규식</legend>
+            <label for="fname">성:</label>
+            <input type="text" id="fname" pattern="^왕[가-힣]{1,2}" required placeholder="성을 입력해 주세요."><br>
+            <label for="lname">이름:</label>
+            <input type="text" id="lname" pattern="[가-힣]{1,4}님$" required><br>
+            <label for="age">나이:</label>
+            <input type="text" id="age" pattern="[0-9]{2}" value="12"><br>
+            <label for="call">전화번호:</label>
+            <input type="text" id="call" pattern="010-\d{3,4}-\d{4}" placeholder="010-0000-0000">
+            <hr>
+            <input type="submit" value="OK">
+            <input type="reset" value="Reset">
+            <hr>
+            <button type="submit">전송</button>
+            <button type="reset">리셋</button>
+            <button>일반버튼</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

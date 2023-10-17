@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .contain{
+            display: flex;
+            height: 70px;
+            padding-left: 8px;
+            box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, 0.1 );
+            background-color: #fff;
+            
+        }
+        .box{
+            flex: 0 1 auto;
+            max-width: 300px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 38px;
+            padding: 8px;
+            background-color: white;
+            margin: 16px 8px;
+            box-sizing: border-box;
+            border: 1px solid rgba( 0, 0, 0, 0.1);
+            border-radius: 10px;
+                
+        }
+        .btn{
+            height: 38px;
+            margin: 16px 15px 0 auto;
+            border: 1px solid rgba( 0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: lightgray;
+            font-size: 17px;
+            flex:none;                
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="box">가나다라마바사아자차카타파하가나다라마바사아자차카타파하</div>
+        <div class="box">가나다</div>
+        <div class="box">가나다라마바사</div>
+        <div class="box">가나다라</div>
+        <button class="btn">버튼</button>
+    </div>
+</body>
+</html>

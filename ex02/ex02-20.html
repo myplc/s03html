@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 영화카드만들기</title>
+<style>
+    .contain{
+        margin: auto;
+        width:500px;
+        height: 500px;
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap
+            
+    }
+    .card{
+        margin: auto;
+        border: 1px solid rgba( 0, 0, 0, 0.3 );
+        width:210px;
+        height: 200px;
+    }
+    .imgs{
+        background-image:url("https://www.10wallpaper.com/wallpaper/medium/2003/1917_George_MacKay_2019_Film_HD_Poster_medium.jpg");
+        background-color: beige;
+        background-size: contain;
+        height: 65%;        
+    }
+    img{
+        width: 100%;
+        height: 65%;
+        object-fit:fill
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="card">
+            <div class="imgs">img1</div>
+            <div>1917 전쟁영화 1관</div>
+        </div>
+        <div class="card">
+            <div class="imgs">img2</div>
+            <div>1917 전쟁영화 2관</div>
+        </div>
+        <div class="card">
+            <img src="/img/1987.jfif" alt="img3">
+            <div>1987 한국영화</div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Bkmd0l-QnBW5RpBF1wz0V5O24VWmvbNr_g&usqp=CAU" alt="img4">
+            <div>OTT 개봉드라마</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5. 복합 선택자</title>
+    <style>
+/*        div p{ div의 자손 p에 적용*/
+/*        div+p{ div의 형제 p에 적용*/
+/*        div>p{ div의 바로아래 p에만 적용*/
+        div{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <h1>5. 복합 선택자</h1>
+    <h2>Heading</h2>
+    <div>
+       안녕하세요
+        <p>child 1</p>
+        <p>child 2</p>
+        <span>
+           반갑습니다.
+            <p>grandchild</p>
+        </span>
+        <p>어디가세요</p>
+    </div>
+    <p>neighborhood child</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션 크기 translate</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 4px solid #f4c7c7;
+            margin: 50px;
+        }
+        .tran{
+            background-color: bisque;
+            border-radius: 5px;
+            transition: 1s linear
+        }
+        .tran:hover{
+            transform:rotate(45deg) scale(0.5) translateX(200px);
+        }
+    </style>
+</head>
+<body>
+    <h1> 이동 translate </h1>
+    <div class="container">
+        <div class="tran">transformed</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestias?</p>
+    </div>
+</body>
+</html>

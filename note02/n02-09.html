@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미디어쿼리</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 400px;
+            background-color: aqua
+        }
+        @media (max-width:780px){
+            .box{
+                width: 300px;
+                background-color: beige
+            }
+        }
+        @media (max-width:500px){
+            .box{
+                width: 200px;
+                height: 250px;
+                background-color: steelblue
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>반응형 미디어쿼리 @media</h1>
+    <div class="box">box</div>
+</body>
+</html>
